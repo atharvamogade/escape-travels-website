@@ -1,7 +1,186 @@
-@media screen and (max-width: 1200px) {
-  * {
-      display: none;
+/* ************************* */
+/* BELOW 1344px (Small desktops) */
+/* ************************* */
+
+@media (max-width: 1344px) {
+}
+
+/* ************************* */
+/* BELOW 1200px (Landscape tablet) */
+/* ************************* */
+
+@media (max-width: 1200px) {
+  .row {
+    width: 1000px;
   }
 
-  
+  h1 {
+    font-size: 280%;
+  }
+
+  h2 {
+    font-size: 200%;
+    margin-bottom: 15px;
+  }
+
+  h2:after {
+    width: 75px;
+  }
+
+  .long-copy {
+    font-size: 100%;
+  }
+  .card {
+    width: 300px;
+    height: 400px;
+  }
+
+  .card-row {
+    padding: 30px 0;
+  }
+}
+
+/* ************************* */
+/* BELOW 944px (Tablet) */
+/* ************************* */
+
+@media (max-width: 944px) {
+  .row {
+    width: 800px;
+  }
+
+  h1 {
+    font-size: 200%;
+  }
+
+  h2 {
+    font-size: 180%;
+    margin-bottom: 15px;
+  }
+  h2:after {
+    width: 60px;
+  }
+  .long-copy {
+    font-size: 80%;
+  }
+
+  .navigation {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .card {
+    width: 250px;
+    height: 300px;
+  }
+  .card-title {
+    font-size: 100%;
+  }
+  .card-row {
+    padding: 30px 0;
+    justify-content: space-around;
+  }
+
+  .form {
+    padding: 32px 32px;
+    gap: 24px;
+  }
+
+  .footer-nav {
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+
+/* ************************* */
+/* BELOW 704px (Small tablet) */
+/* ************************* */
+
+@media (max-width: 704px) {
+  .row {
+    width: 500px;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  h1 {
+    font-size: 160%;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 140%;
+    margin-bottom: 15px;
+  }
+  h2:after {
+    width: 60px;
+  }
+  .long-copy {
+    font-size: 80%;
+  }
+
+  .card-row {
+    margin: 0 auto;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+  }
+
+  .contact-card {
+    width: 80%;
+    /* height: 520px; */
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .card-image {
+    height: 250px;
+    border-radius: 25px 25px 0 0;
+  }
+  .form {
+    gap: 16px;
+  }
+
+  .input-field:last-child {
+    height: 100px;
+  }
+}
+
+/* ************************* */
+/* BELOW 544px (Mobile) */
+/* ************************* */
+
+@media (max-width: 544px) {
+  .row {
+    width: 300px;
+  }
+
+  .main-nav {
+    border-top: 1px solid rgb(182, 182, 182);
+    border-bottom: 1px solid rgb(182, 182, 182);
+    gap: 16px;
+    padding: 20px 0;
+  }
+
+  .footer-nav-links {
+    gap: 12px;
+  }
+
+  .copyright p {
+    width: 270px;
+    line-height: 160%;
+  }
+
+  .contact-info {
+    flex-direction: column;
+  }
+
+  .copyright p br {
+    display: none;
+  }
+
+  .contact-card {
+    width: 100%;
+  }
 }
